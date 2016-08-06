@@ -26,6 +26,7 @@ class ProductManager(models.Manager):
 class Product(models.Model):
 
     name = models.CharField('Nome', max_length=100)
+    instrutor = models.CharField('Instrutor', max_length=100)
     image = models.ImageField('Imagem', upload_to = 'pic_folder/', default = 'pic_folder/None/no-img.jpg')
     slug = models.SlugField('Slug')
     category = models.ForeignKey(Category, verbose_name='Categoria')

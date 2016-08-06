@@ -11,11 +11,14 @@
 <div class="row">
   <div class="col-sm-4">
       <a href="#" class="thumbnail">
-          
+       
+         <img src="{{ product.image.url }}" width="240" length="340"></img>
+        
       </a>
   </div>
   <div class="col-sm-8">
       <h3>{{ product.description|linebreaks }}</h3>
+      <h4>Instrutor: {{ product.instrutor }}</h4>
       <h4><span class=" glyphicon glyphicon-hourglass"> Deadline: {{ product.date }}</h4>
   </div>
 </div>

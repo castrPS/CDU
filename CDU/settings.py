@@ -31,7 +31,7 @@ INSTALLED_APPS = [
     # libs
     'widget_tweaks',
     # apps
-    'core',
+    'CDU',
     'accounts',
     'catalog',
 ]
