@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
     url(r'^categorias/([\w_-]+)/$', views.category, name='category'),
     url(r'^produtos/(?P<slug>[\w_-]+)/$', views.ProductDetailView.as_view(), name='product'),
+    url(r'^produtos/(?P<slug>[\w_-]+)/$', views.EndView.as_view(), name='end'),
 ]

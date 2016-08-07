@@ -7,7 +7,7 @@
             <h3>{{ product.name }}</h3>
             {{ product.description|linebreaks }}
             <p>Instrutor: {{ product.instrutor}}</p>
-            <p><a href="{% url 'catalog:product' product.slug %}" class="btn btn-success">Detalhes</a> <a href="" class="btn btn-default">R${{ product.price }}</a></p>
+            <p><a href="{% url 'catalog:product' product.slug %}" class="btn btn-success">Detalhes</a> <a href="{% url 'catalog:end' product.slug %}" class="btn btn-default">R${{ product.price }}</a></p>
         </div>
     </div>
 </div>

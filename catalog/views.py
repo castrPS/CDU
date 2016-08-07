@@ -30,9 +30,13 @@ def category(request, slug):
     }
     return render(request, 'catalog/category.html', context)
 
-
+class EndView(DetailView):
+    template_name = 'catalog/end.html'
+    context_object_name = 'product'
+    
 class ProductDetailView(DetailView):
 
     template_name = 'catalog/product.html'
     context_object_name = 'product'
     queryset = Product.objects.approved()
+

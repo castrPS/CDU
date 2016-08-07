@@ -20,6 +20,7 @@
       <h3>{{ product.description|linebreaks }}</h3>
       <h4>Instrutor: {{ product.instrutor }}</h4>
       <h4><span class=" glyphicon glyphicon-hourglass"> Deadline: {{ product.date }}</h4>
+      <a href="{% url 'catalog:end' product.slug %}" class="btn btn-default">R${{ product.price }}</a></p>
   </div>
 </div>
 {% endblock %}
